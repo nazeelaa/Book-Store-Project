@@ -1,0 +1,11 @@
+.mainLogo{
+    width: 245px;
+    height: 245px;
+    border-radius: 200px;
+    margin-left: 5%;
+    margin-top: 10%;
+    position: relative;
+    right: 110px;
+    bottom: 20px;
+
+}

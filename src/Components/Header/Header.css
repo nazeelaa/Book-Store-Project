@@ -1,0 +1,22 @@
+.bookImage{
+    width: 50px;
+    height: 50px;
+}
+.image{
+    width: 35px;
+        height: 30px;
+}
+.imagetitle{
+    color:white;
+    font-size: 20px;
+}
+.icons{
+    
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+
+}

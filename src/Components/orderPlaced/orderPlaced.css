@@ -1,0 +1,31 @@
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .order-table {
+    /* width: 100%; */
+    width: 751px;
+    height: 100px; 
+    margin-top: 50px;
+    text-align: center;
+    font: normal normal medium 12px/15px Roboto;
+    color: #333232;
+    opacity: 1;
+  }
+  
+  .table,
+  td {
+    min-width: 50px;
+    border: 1px solid #dcdcdc;
+    border-collapse: collapse;
+    padding: 30px;
+    color: #2c2b2b;
+  }
+  
+  th {
+    background-color: #fafafa;
+    padding: 20px;
+    color: #292828;
+  }
