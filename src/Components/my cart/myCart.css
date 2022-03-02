@@ -1,7 +1,7 @@
 .cartContainer{
     
     width: 45vw;
-    margin-top: 15vh;
+    margin-top: 2vh;
     display: flex;
      flex-direction:column; 
      border: 2px solid gray;
@@ -19,6 +19,7 @@
     border: bisque;
     display: flex;
     justify-content: space-between;
+    margin-left: 4%;
     
 }
 #headers{
@@ -34,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
+    margin-top: 5%;
     
 }
 .image{
@@ -48,12 +50,15 @@
     display: flex;
     flex-direction: column;  
     align-items: flex-start;
+   
 }
 .buttons{
-    width: 50px;
+   
+    width: 150px;
     height: 10px;
     margin-left: 5px;
     display: flex;
+    justify-content: space-between;
 }
 .inputBox{
     width: 10px;
@@ -62,4 +67,8 @@
     position: relative;
     left: 180px;
     
+}
+#bn{
+    font-size: 15px;
+    font-weight: bolder;
 }

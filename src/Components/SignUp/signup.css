@@ -1,0 +1,103 @@
+.signUpBox{
+    margin-top: 5%;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid black; */
+    
+    border-radius: 8px;
+    position: absolute;
+    align-items: center;
+    
+}
+.signupInnerBox{
+    height: 100%;
+    width: 90%; 
+    display:flex;
+    flex-direction:column;
+    /* border: 1px solid red; */
+    justify-content:space-evenly;
+    
+   
+}
+
+@media only screen and (min-width:'320px') and (max-width:'480px'){
+    .signUpBox{
+        margin-top: 5%;
+        width: 100%;
+        height: 80%;
+        /* border: 1px solid black; */
+        
+        border-radius: 8px;
+        position: absolute;
+        align-items: center;
+        
+    }
+    .signupInnerBox{
+        height: 100%;
+        width: 90%; 
+        display:flex;
+        flex-direction:column;
+        /* border: 1px solid red; */
+        justify-content:space-evenly;
+        
+       
+    }
+    
+}
+
+@media only screen and (min-width:'481px') and (max-width:'768px'){
+    .signUpBox{
+        margin-top: 5%;
+        width: 100%;
+        height: 80%;
+         border: 1px solid black; 
+        
+        border-radius: 8px;
+        position: absolute;
+        align-items: center;
+        
+    }
+    .signupInnerBox{
+
+        height: 100%;
+        width: 90%; 
+        display:flex;
+        flex-direction:column;
+        border: 1px solid red;
+        justify-content:space-evenly;
+        
+       
+    }
+    
+}
+
+@media only screen and (min-width:'769px') and (max-width:'1024px'){
+    .signUpBox{
+        margin-top: 5%;
+        width: 100%;
+        height: 80%;
+         border: 1px solid black; 
+        
+        border-radius: 8px;
+        position: absolute;
+        align-items: center;
+        
+    }
+    .signupInnerBox{
+        
+        height: 100%;
+        width: 90%; 
+        display:flex;
+        flex-direction:column;
+        border: 1px solid red;
+        justify-content:space-evenly;
+        
+       
+    }
+    .fields{
+        height: 55px;
+        width: 80px;
+        background-color: aqua;
+    }
+    
+}

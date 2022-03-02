@@ -28,7 +28,7 @@ function Books(props) {
             width:180,
             height:250,
             position: 'relative',
-            left: '30%',
+            left: '20%',
             backgroundColor:'lightgray'}}>
             <img height={140} src={book1} alt="bookimage"></img> 
             <Card sx={{width:'180px',height:'110px',paddingLeft:'1px',paddingRight:'1px'}} onClick={()=>takeClick(props.book)}>

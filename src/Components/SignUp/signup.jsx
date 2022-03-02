@@ -4,7 +4,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
-import {userSignup} from '../../Services/userService'
+import {userSignup} from '../../Services/userService';
+import { Box } from '@mui/material';
+import '../SignUp/signup.css';
 function SignUp() {
 
     
@@ -140,41 +142,33 @@ function onSubmit()
     return (
     <div>
         
-            <Card sx={{  width: 280,
-                height: 300,
-                // border: '1px solid black',
-                // backgroundColor: 'white',
-                // borderRadius: '8px',
-                position: 'absolute',
-                top: '12%',
-                left: '3%'}}>
-                <CardContent >
-                    <Typography sx={{display:"flex",flexDirection:"column",justifyContent:"space-between",width:"260px",height:"280px"}}>
-                    {/* <Typography><Button>sIGN</Button></Typography> */}
-                    {/* sx={{fontSize:"20px",fontWeight:"bold",position:'relative',left:"80px"}} onChange={onsubmit}>SIGNUP</Typography> */}
-                        <Typography><TextField id="outlined-basic" size="small" label="Full Name" variant="outlined" 
+            <Box className="signUpBox">
+                <Box className='signupInnerBox' >
+                    
+                  
+                        <Typography><TextField className='fields' id="outlined-basic" size="small" label="Full Name" variant="outlined" 
                         error={fnamerror} helperText={fnamehelper} onChange={takeFname}
                          /></Typography>
-                        <Typography><TextField id="outlined-basic" size="small" label="Email Id" variant="outlined"
+                        <Typography><TextField className='fields' id="outlined-basic" size="small" label="Email Id" variant="outlined"
                          error={emailerror} helperText={emailhelper} onChange={takeEmail}
                          /></Typography>
-                        <Typography><TextField id="outlined-basic" size="small" label="Password" variant="outlined" 
+                        <Typography><TextField className='fields' id="outlined-basic" size="small" label="Password" variant="outlined" 
                         error={pwderror} helperText={pwdhelper} onChange={takePwd}
                         /></Typography>
-                        <Typography><TextField id="outlined-basic" size="small" label="Mobile Number" variant="outlined"
+                        <Typography><TextField className='fields' id="outlined-basic" size="small" label="Mobile Number" variant="outlined"
                         error={mobilerror} helperText={mobilehelper} onChange={takeMobile}
                         /></Typography>
-                        <Typography sx={{width:'200px',height:'30px',display:"flex",justifyContent:"center",position:'relative',left:'25px'}}><Button sx={{backgroundColor:'brown'}} variant="contained" fullWidth={true} onClick={onSubmit}>SignUp</Button></Typography>
-                                </Typography>
+                        <Typography><Button className='fields' sx={{backgroundColor:'brown'}} variant="contained"  onClick={onSubmit}>SignUp</Button></Typography>
+                                
                     
                     
 
                     
 
                     
-                </CardContent>
+                </Box>
               
-            </Card>
+            </Box>
             </div>
             
 

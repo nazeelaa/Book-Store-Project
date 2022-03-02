@@ -1,10 +1,49 @@
+.HeaderBox{
+    width: 100vw;
+    height: 9vh;
+    background-color:brown;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+.innerHeaderBox{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    /* justifyContent: 'space-evenly', */
+    align-items:center;
+}
+.searchBox{
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.iconBox
+{width: 80;
+height: 50;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+align-items: center;
+}
+
+
+
+
+
+
+
+
 .bookImage{
     width: 50px;
     height: 50px;
 }
-.image{
+.bookImage{
     width: 35px;
-        height: 30px;
+    height: 30px;
 }
 .imagetitle{
     color:white;
@@ -18,5 +57,134 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;  
+
+}
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .HeaderBox{
+        width: 100vw;
+        height: 9vh;
+        background-color:brown;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+    
+    }
+    .bookImage{
+        width: 30px;
+        height: 20px;
+    }
+    .searchBox{
+      display: none;
+    }
+
+    .icons{
+    
+        height: 20px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;  
+    
+    }
+    
+
+}
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .HeaderBox{
+        width: 100vw;
+        height: 9vh;
+        background-color:brown;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+    
+    }
+    .bookImage{
+        width: 30px;
+        height: 20px;
+    }
+    .searchBox{
+      display: none;
+    }
+
+    .icons{
+    
+        height: 20px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;  
+    
+    }
+
+}
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .HeaderBox{
+        width: 100vw;
+        height: 9vh;
+        background-color:brown;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+    
+    }
+    .bookImage{
+        width: 30px;
+        height: 20px;
+    }
+    .searchBox{
+      display: none;
+    }
+
+    .icons{
+    
+        height: 20px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;  
+    
+    }
+    
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px)
+{
+    .HeaderBox{
+        width: 100vw;
+        height: 9vh;
+        background-color:brown;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+    
+    }
+    .bookImage{
+        width: 30px;
+        height: 20px;
+    }
+    .searchBox{
+        width: 400px;
+        height: 50px;
+        display: flex;
+        align-items: center; 
+    }
+
+    .icons{
+    
+        height: 20px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;  
+    
+    }
 
 }

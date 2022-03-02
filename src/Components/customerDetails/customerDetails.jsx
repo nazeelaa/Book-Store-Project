@@ -9,6 +9,7 @@ import { Button } from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import {updateCustomerDetails} from '../../Services/dataService'
+import OrderDetails from '../orderDetails/orderDetails';
 
 function CustomerDetails(props) {
     const [customer, setCustomerdata] = React.useState([]);
@@ -16,7 +17,9 @@ function CustomerDetails(props) {
     const [city, setCity] = React.useState("");
     const [state, setState] = React.useState("");
     const [type, setType] = React.useState("");
-  
+    const [name,setName]=React.useState(false)
+    const [navigate, setNavigate] = React.useState(true)
+
     let takeState = (event) => setState(event.target.value);
     let takeAddress = (event) => setAddress(event.target.value);
     let takeCity = (event) => setCity(event.target.value);
@@ -27,6 +30,8 @@ function CustomerDetails(props) {
    
     
     const CustomerDetails = () => {
+      props.listenToCustomerDetails()
+      console.log(props.listenToCustomerDetails())
       
       let customerDetails = {
         
@@ -38,10 +43,14 @@ function CustomerDetails(props) {
      
     
       updateCustomerDetails(customerDetails).then((response) => {
+
+        setName(true)
+        
        
           console.log("updated address ", response);
          
           setCustomerdata(response.data.result)
+
          
         })
         .catch((err) => {
@@ -90,11 +99,12 @@ function CustomerDetails(props) {
                 
             </CardContent>
             </Card>
-            <CardActions sx={{position:'relative',bottom:'60px',left:'800px'}}>
-        <Button onClick={CustomerDetails} variant='contained' size='large'>CONTINUE</Button></CardActions>
-        {/* <Card sx={{width:'50vw',height:'10vh',marginTop:'20px',marginLeft:'150px'}}>
-            <CardContent sx={{fontSize:'20px',fontWeight:'bold',position:'relative',right:'280px'}}>Order Summery</CardContent>
-        </Card> */}
+            
+           <CardActions sx={{position:'relative',bottom:'60px',left:'800px'}}>
+        <Button onClick={CustomerDetails} variant='contained' size='large'>CONTINUE</Button></CardActions> 
+          
+
+        
         
     </div>
   )
